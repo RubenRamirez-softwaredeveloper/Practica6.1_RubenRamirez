@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imagenAndroid"
+        android:id="@+id/FondoAndroid"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         app:srcCompat="@drawable/background_1"
@@ -18,56 +18,54 @@
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/star"
+        android:id="@+id/Estrella"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical=""
         android:layout_marginRight="56dp"
-        android:layout_marginBottom="62dp"
+        android:layout_marginBottom="44dp"
         android:backgroundTint="#FF0303"
         android:clickable="true"
         android:contentDescription="estrella"
         android:foregroundTintMode="add"
         android:src="@drawable/ic_star"
         app:backgroundTintMode="add"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/Bocadillo1"
 
         app:layout_constraintRight_toRightOf="parent"
         app:tint="@color/white" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/IconoTelefono"
         android:layout_width="54dp"
         android:layout_height="50dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenAndroid"
+        app:layout_constraintTop_toBottomOf="@+id/FondoAndroid"
         app:srcCompat="@drawable/ic_phone" />
 
     <View
         android:id="@+id/divider"
-        android:layout_width="409dp"
+        android:layout_width="320dp"
         android:layout_height="1dp"
         android:layout_marginStart="36dp"
-        android:layout_marginBottom="74dp"
+        android:layout_marginBottom="40dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/IconoEmail"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/IconoEmail"
         android:layout_width="63dp"
         android:layout_height="58dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginBottom="95dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/T3Email"
+        app:layout_constraintStart_toStartOf="@+id/divider"
         app:srcCompat="@drawable/ic_email" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/Bocadillo1"
         android:layout_width="56dp"
         android:layout_height="46dp"
         android:layout_marginEnd="44dp"
@@ -78,12 +76,12 @@
         android:forceHasOverlappingRendering="false"
         android:foregroundTint="#00FBE4"
         app:tint="#057167"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/Bocadillo2"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_sms" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/Bocadillo2"
         android:layout_width="56dp"
         android:layout_height="45dp"
         android:layout_marginEnd="44dp"
@@ -102,9 +100,9 @@
         android:text="619337399"
 
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintStart_toEndOf="@+id/imageView" />
+        app:layout_constraintBottom_toTopOf="@+id/T1Movil"
+        app:layout_constraintEnd_toStartOf="@+id/Bocadillo1"
+        app:layout_constraintStart_toEndOf="@+id/IconoTelefono" />
 
     <TextView
         android:id="@+id/telefono2"
@@ -114,51 +112,51 @@
         android:layout_marginEnd="51dp"
         android:text="646304689"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/T2Movil"
+        app:layout_constraintEnd_toStartOf="@+id/Bocadillo2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/T1Movil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="16dp"
         android:foregroundTint="#C9000000"
         android:text="Movil"
         app:layout_constraintBottom_toTopOf="@+id/telefono2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3" />
+        app:layout_constraintEnd_toStartOf="@+id/Bocadillo1" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/T2Movil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="144dp"
         android:layout_marginBottom="19dp"
         android:text="Movil"
         app:layout_constraintBottom_toTopOf="@+id/divider"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4" />
+        app:layout_constraintEnd_toStartOf="@+id/Bocadillo2" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/T3Email"
         android:layout_width="201dp"
         android:layout_height="35dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="3dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="292dp"
         android:text="info@gmail.com"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="@+id/IconoEmail"
+        app:layout_constraintTop_toBottomOf="@+id/FondoAndroid" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/T4Mail"
         android:layout_width="39dp"
         android:layout_height="24dp"
-        android:layout_marginEnd="239dp"
-        android:layout_marginBottom="90dp"
 
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
         android:text="Mail"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/IconoEmail"
+        app:layout_constraintTop_toTopOf="@+id/T3Email" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
